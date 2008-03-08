@@ -6,4 +6,18 @@ and might never actually be completed :-)
 See http://www.claws-mail.org/ for the Claws mailer, and http://www.claws-mail.org/themes.php
 for more themes.
 
-(TODO: describe how to build the theme)
+This modified theme is actually created from four sources:
+- the original TangoClaws theme (http://www.claws-mail.org/themes.php)
+- the Tango icon theme for Thunderbird (https://addons.mozilla.org/en-US/firefox/addon/2258?id=2258&application=thunderbird)
+- the original Tango icon set (http://tango.freedesktop.org/)
+- other icons that are based on existing Tango icons but are modified a bit (in customIcons/ directory)
+
+To build the theme:
+- download the TangoClaws tgz from http://www.claws-mail.org/download.php?file=themes/claws-mail-theme_TangoClaws-0.3.tar.gz
+  and put it into the directory where the Makefile resides
+- download the Tango icons for Thunderbird from https://addons.mozilla.org/en-US/firefox/downloads/file/16375/tango_icons_for_thunderbird-0.7.0-tb.jar
+  and also put it that directory
+- make sure the original Tango iconset is installed at /usr/share/icons/Tango/
+  (you can probably install it through the package manager of your system)
+- run make
+- this should create a new tgz which contains the new theme.
