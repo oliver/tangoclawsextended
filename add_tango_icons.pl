@@ -3,6 +3,7 @@
 use strict;
 use warnings;
 
+my $baseIconDir = './TangoClaws-0.3/';
 my $tango = '/usr/share/icons/Tango/';
 my $tbtango = './tango_icons_for_thunderbird-0.7.0-tb/';
 my $targetDir = './newIcons/';
@@ -21,6 +22,27 @@ my %mapping = (
 );
 
 
+if (!$targetDir || (! -d $targetDir))
+{
+    die ("no valid target directory specified");
+}
+
+# clean up
+`rm $targetDir/*`;
+
+
+# add theme info
+open(OUT, ">$targetDir/.claws_themeinfo") or die "$!";
+print OUT 'TangoClawsExt
+Frederik Elwert, Oliver Gerlich
+';
+close(OUT);
+`cp $targetDir/.claws_themeinfo $targetDir/.sylpheed_themeinfo`;
+
+# copy base images
+`cp $baseIconDir/*.xpm $targetDir/`;
+
+# add converted images
 for (keys(%mapping))
 {
     my $dstName = $_;
