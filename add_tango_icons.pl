@@ -11,9 +11,9 @@ my $targetDir = $ARGV[0];
 
 my %mapping = (
 'dir_close' => "$tango/16x16/places/folder.png",
-'dir_close_mark' => "",
+'dir_close_mark' => ['overlay', "$tango/16x16/places/folder.png", "$custom/folder-mark-emblem.png"],
 'dir_open' => "$tango/16x16/status/folder-open.png",
-'dir_open_mark' => "",
+'dir_open_mark' => ['overlay', "$tango/16x16/status/folder-open.png", "$custom/folder-mark-emblem.png"],
 'inbox_close' => "$tango/16x16/places/folder_home.png",
 'inbox_open' => "$tango/16x16/places/folder_home.png",
 'outbox_close' => "$tbtango/messenger/icons/folder-outbox.png",
