@@ -55,7 +55,19 @@ for (keys(%mapping))
 {
     my $dstName = $_;
     my $dstPath = "$targetDir/$dstName.xpm";
-    my $srcPath = $mapping{$_};
+
+    my $action = 'convert';
+
+    my $srcPath;
+    if (ref($mapping{$_}) eq 'ARRAY')
+    {
+        $action = $mapping{$_}->[0];
+        $srcPath = $mapping{$_}->[1];
+    }
+    else
+    {
+        $srcPath = $mapping{$_};
+    }
 
     if (!$srcPath)
     {
@@ -72,10 +84,25 @@ for (keys(%mapping))
         next;
     }
 
-    #my $srcSize = `identify -format "%wx%h" $srcPath`;
-    #my $cmd = "convert -size '$srcSize' xc:white '$srcPath' -composite '$dstPath'";
-    my $cmd = "convert '$srcPath' '$dstPath'";
-    print "cmd: '$cmd'\n";
-    `$cmd`;
+    if ($action eq 'convert')
+    {
+        #my $srcSize = `identify -format "%wx%h" $srcPath`;
+        #my $cmd = "convert -size '$srcSize' xc:white '$srcPath' -composite '$dstPath'";
+        my $cmd = "convert '$srcPath' '$dstPath'";
+        print "cmd: '$cmd'\n";
+        `$cmd`;
+    }
+    elsif ($action eq 'overlay')
+    {
+        my $srcPath2 = $mapping{$_}->[2];
+        if (!$srcPath2 || (! -e $srcPath2))
+        {
+            die("invalid overlay icon '$srcPath2' specified");
+        }
+
+        my $cmd = "convert '$srcPath' '$srcPath2' -composite '$dstPath'";
+        print "cmd: '$cmd'\n";
+        `$cmd`;
+    }
 }
 
