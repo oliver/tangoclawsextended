@@ -6,6 +6,7 @@ use warnings;
 my $baseIconDir = './TangoClaws-0.3/';
 my $tango = '/usr/share/icons/Tango/';
 my $tbtango = './tango_icons_for_thunderbird-0.7.0-tb/';
+my $custom = './customIcons/';
 my $targetDir = './newIcons/';
 
 my %mapping = (
@@ -25,7 +26,7 @@ my %mapping = (
 'unread' => "$tbtango/messenger/icons/message-mail.png",
 #'clip' => "$tbtango/messenger/icons/attachment-col.png",
 #'clip' => "$tbtango/messenger/icons/attachment.png",
-'quicksearch' => "$tango/16x16/actions/search.png",
+'quicksearch' => "$custom/quicksearch.png",
 );
 
 
