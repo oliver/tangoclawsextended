@@ -17,7 +17,7 @@ my %mapping = (
 'new' => "$tbtango/messenger/icons/message-mail-new.png",
 'unread' => "$tbtango/messenger/icons/message-mail.png",
 #'clip' => "$tbtango/messenger/icons/attachment-col.png",
-'clip' => "$tbtango/messenger/icons/attachment.png",
+#'clip' => "$tbtango/messenger/icons/attachment.png",
 );
 
 
@@ -42,10 +42,9 @@ for (keys(%mapping))
         next;
     }
 
-    my $cmd = "convert -alpha on '$srcPath' '$dstPath'";
-    #my $cmd = "convert -alpha on '$srcPath' -background red '$dstPath'";
-    #my $cmd = "convert -matte -background red '$srcPath' '$dstPath'";
-    #my $cmd = "convert xc:red '$srcPath' -composite '$dstPath'";
+    #my $srcSize = `identify -format "%wx%h" $srcPath`;
+    #my $cmd = "convert -size '$srcSize' xc:white '$srcPath' -composite '$dstPath'";
+    my $cmd = "convert '$srcPath' '$dstPath'";
     print "cmd: '$cmd'\n";
     `$cmd`;
 }
