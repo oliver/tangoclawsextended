@@ -25,6 +25,7 @@ my %mapping = (
 'unread' => "$tbtango/messenger/icons/message-mail.png",
 #'clip' => "$tbtango/messenger/icons/attachment-col.png",
 #'clip' => "$tbtango/messenger/icons/attachment.png",
+'quicksearch' => "$tango/16x16/actions/search.png",
 );
 
 
