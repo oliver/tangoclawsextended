@@ -7,7 +7,7 @@ my $baseIconDir = './TangoClaws-0.3/';
 my $tango = '/usr/share/icons/Tango/';
 my $tbtango = './tango_icons_for_thunderbird-0.7.0-tb/';
 my $custom = './customIcons/';
-my $targetDir = './newIcons/';
+my $targetDir = $ARGV[0];
 
 my %mapping = (
 'dir_close' => "$tango/16x16/places/folder.png",
