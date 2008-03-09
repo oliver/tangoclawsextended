@@ -12,6 +12,9 @@ This modified theme is actually created from four sources:
 - the original Tango icon set (http://tango.freedesktop.org/)
 - other icons that are based on existing Tango icons but are modified a bit (in customIcons/ directory)
 
+The theme can be downloaded from
+http://github.com/oliver/tangoclawsextended/tree/master/claws-mail-theme_TangoClawsExt-0.3.tar.gz?raw=true
+
 To build the theme:
 - download the TangoClaws tgz from http://www.claws-mail.org/download.php?file=themes/claws-mail-theme_TangoClaws-0.3.tar.gz
   and put it into the directory where the Makefile resides
