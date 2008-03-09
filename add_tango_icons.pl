@@ -55,6 +55,7 @@ if (!$targetDir || (! -d $targetDir))
 open(OUT, ">$targetDir/.claws_themeinfo") or die "$!";
 print OUT 'TangoClawsExt
 Frederik Elwert, Oliver Gerlich
+http://github.com/oliver/tangoclawsextended
 ';
 close(OUT);
 `cp $targetDir/.claws_themeinfo $targetDir/.sylpheed_themeinfo`;
