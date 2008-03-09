@@ -35,6 +35,7 @@ my %mapping = (
 'mime_text_enriched' => "$tango/16x16/mimetypes/document.png",
 'mime_text_html' => "$tango/16x16/mimetypes/text-html.png",
 'mime_text_plain' => "$tango/16x16/mimetypes/text-x-generic.png",
+'mime_unknown' => "$custom/mime-unknown.png",
 );
 
 
