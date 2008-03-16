@@ -6,7 +6,23 @@ and might never actually be completed :-)
 See http://www.claws-mail.org/ for the Claws mailer, and http://www.claws-mail.org/themes.php
 for more themes.
 
-This modified theme is actually created from four sources:
+The original TangoClaws theme was created by Frederik Elwert, who writes about it:
+"The icons of this theme are based on the work of The Tango Project <http://tango-project.org/>.
+Icons that were not present in the Tango icon set were partly created by myself or taken from the
+following other Projects:
+
+    * Tango Icons for Thunderbird, by Nico Kaiser
+      <https://addons.mozilla.org/thunderbird/2258/>
+
+    * Tango CL theme for Opera, by towolf
+      <http://my.opera.com/community/customize/skins/info/?id=3465>
+"
+
+This work is licensed under the Creative Commons Attribution Share-Alike license.
+See <http://creativecommons.org/licenses/by-sa/2.5/> for details.
+
+
+So, this modified theme is actually created from four sources:
 - the original TangoClaws theme (http://www.claws-mail.org/themes.php)
 - the Tango icon theme for Thunderbird (https://addons.mozilla.org/en-US/firefox/addon/2258?id=2258&application=thunderbird)
 - the original Tango icon set (http://tango.freedesktop.org/)
