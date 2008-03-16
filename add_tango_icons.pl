@@ -32,6 +32,7 @@ my %mapping = (
 'mime_image' => "$tango/16x16/mimetypes/image-x-generic.png",
 'mime_message' => "$custom/mime-email.png",
 'mime_pdf' => "$tango/16x16/mimetypes/gnome-mime-application-pdf.png",
+'mime_pgpsig' => "$tango/16x16/mimetypes/application-certificate.png",
 'mime_ps' => "$tango/16x16/mimetypes/gnome-mime-application-postscript.png",
 'mime_text_enriched' => "$tango/16x16/mimetypes/document.png",
 'mime_text_html' => "$tango/16x16/mimetypes/text-html.png",
