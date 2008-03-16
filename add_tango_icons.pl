@@ -96,9 +96,7 @@ for (keys(%mapping))
 
     if (! -e $srcPath)
     {
-        #die("source icon '$srcPath' not found");
-        print "source icon '$srcPath' not found - ignoring\n";
-        next;
+        die("source icon '$srcPath' not found");
     }
 
     if ($action eq 'convert')
