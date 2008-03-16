@@ -70,6 +70,9 @@ close(OUT);
 # copy README file
 `cp README $targetDir/`;
 
+# copy INSTALL file from TangoClaws
+`cp $baseIconDir/INSTALL $targetDir/`;
+
 # add converted images
 for (keys(%mapping))
 {
