@@ -29,6 +29,7 @@ my %mapping = (
 #'clip' => "$tbtango/messenger/icons/attachment-col.png",
 #'clip' => "$tbtango/messenger/icons/attachment.png",
 'quicksearch' => "$custom/quicksearch.png",
+'mime_audio' => "$tango/16x16/mimetypes/audio-x-generic.png",
 'mime_calendar' => "$tango/16x16/mimetypes/vcalendar.png",
 'mime_image' => "$tango/16x16/mimetypes/image-x-generic.png",
 'mime_message' => "$custom/mime-email.png",
