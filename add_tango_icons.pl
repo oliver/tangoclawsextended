@@ -67,6 +67,9 @@ close(OUT);
 # copy base images
 `cp $baseIconDir/*.xpm $targetDir/`;
 
+# copy README file
+`cp README $targetDir/`;
+
 # add converted images
 for (keys(%mapping))
 {
